@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>О, эта дивная верстка</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/@shower/material/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+            --color-key: #844caf;
+        }
+
+        .c-white {
+            color: white !important;
+        }
+
+        .bem-bgi:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: black;
+            opacity: 0.5;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body class="shower list">
+
+    <header class="caption">
+        <h1>О, эта дивная верстка</h1>
+        <p>Domanskyi Valentyn © 2021</p>
+    </header>
+
+    <section class="slide">
+        <ul>
+            <li>Виды верстки и мой любимый</li>
+            <li>Семантика как альтернатива BEM и мой BEM</li>
+            <li>Можно ли давать стили тегам HTML и BODY?</li>
+            <li>Почему нужно управлять SVG, а также вектор и растор</li>
+            <li>Краткость сестра таланта</li>
+            <li>Учись у лучших но не следуй им</li>
+            <li>Постояно задавайте себе вопрос, а что если?</li>
+            <li>Инструменты и что можно посмотреть</li>
+            <li>Задания и их решение</li>
+            <li>Q&A</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Те самые гриды</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Семантический BEM</h2>
+
+        <ul>
+            <li class="next">Хватит писать блок в блоке с блоком под блоком в блоке варпер!</li>
+            <li class="next">Да можно писать стили для HTML и BODY!</li>
+            <li class="next">Отдайте на обчисление машине</li>
+            <li class="next">Не усложняйте</li> <!-- не надо делать много блоков для простых задач-->
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2 class="c-white">Это наш БЭМ и мы его доим</h2>
+
+        <p class="c-white">.блок--элемент.модификатор</p>
+        <p class="c-white">.главный-блок__блок--элемент.модификатор</p>
+        <p class="c-white">.какой-то-главный-блок__внутри-есть-блок--и-есть-елемент-блока.а-также-модификатор</p>
+        <div class="bem-bgi">
+            <img src="./assets/dykalis.jpg" alt="" class="cover" width="100%" height="100%">
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Таски</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Стайлз</h2>
+
+        <ul>
+            <li class="next">Давайте не будем бояться амперсанта</li>
+            <li class="next">А точно есть же еще псевдо-элементы</li>
+            <li class="next">Не надо выдумывать велосипед сделайте уже наконец-то машину</li>
+            <li class="next">Начните управлять своими SVG</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Приколясы</h2>
+
+        <ul>
+            <li class="next">Линейка <b class="next">(Liner. The Real Ruler)</b></li>
+            <li class="next">
+                YouTube
+                <ul>
+                    <li class="next">Веб-стандарты</li>
+                    <li class="next">Vadim Makeev</li>
+                    <li class="next">HTML Academy</li>
+                </ul>
+            </li>
+            <li class="next">Habr</li>
+            <li class="next">Повторяйте базовые знания</li>
+            <li class="next">Смотрите у лучших но не следуйте за ними</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Помните...</h2>
+        <br>
+        <br>
+        <ol>
+            <li class="next">Вы можете чего-то не знать и это нормально</li>
+            <li class="next">Включайте хитрость</li>
+            <li class="next">Задавайтесь вопросом, а что если?</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Пошушукаемся</h2>
+    </section>
+
+    <div class="progress"></div>
+
+    <script src="node_modules/@shower/core/dist/shower.js"></script>
+    <!-- Copyright © 2021 Domanskyi Valentyn. -->
+
+</body>
+
+</html>
