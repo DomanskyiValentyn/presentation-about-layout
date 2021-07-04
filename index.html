@@ -48,7 +48,28 @@
 
         .task-wrapper.full img {
             height: 100%;
-            max-height: 100vh;
+            max-height: 50vh;
+        }
+
+        .profile {
+            display: flex;
+        }
+
+        .profile img {
+            width: 400px;
+            height: 400px;
+        }
+
+        .profile-info {
+            margin-left: 30px;
+        }
+
+        .profile-info h1 {
+            margin-top: 0;
+        }
+
+        .profile-info p {
+            line-height: 25px;
         }
     </style>
 </head>
@@ -60,7 +81,7 @@
         <p>Domanskyi Valentyn © 2021</p>
     </header>
 
-    <section class="slide">
+    <section style="display: none;">
         <ul>
             <li>Виды верстки и мой любимый</li>
             <li>Семантика как альтернатива BEM и мой BEM</li>
@@ -87,6 +108,24 @@
     </section>
 
     <section class="slide">
+        <h2 class="shout">
+            О, эта дивная верстка
+        </h2>
+    </section>
+
+    <section class="slide">
+        <div class="profile">
+            <img src="./assets/valentyn2.jpg" alt="">
+
+            <div class="profile-info">
+                <h1>Valentyn Domanskyi</h1>
+                <p>Front-end developer (послухам умею верстать)</p>
+                <p>Верстаю уже 6 лет</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
         <h2 class="shout">Тишина в классе!</h2>
     </section>
 
@@ -98,8 +137,8 @@
             <li class="next">Хватит писать блок в блоке с блоком под блоком в блоке варпер!</li>
             <li class="next">Да можно писать стили для HTML и BODY!</li>
             <li class="next">Отдайте на обчисление машине</li>
-            <li class="next">Не усложняйте верстку Вам это адаптировать</li> <!-- не надо делать много блоков для простых задач-->
             <li class="next">Интересный селктор :not</li>
+            <li class="next">Не усложняйте верстку Вам это адаптировать</li> <!-- не надо делать много блоков для простых задач-->
         </ul>
     </section>
 
@@ -113,6 +152,8 @@
             <li class="next">Илюзия обмана</li>
         </ul>
     </section>
+
+    <!-- 4 Haymarket Rd, Cambridge -->
 
     <section class="slide">
         <h2>Те самые гриды</h2>
@@ -140,7 +181,7 @@
     </section>
 
     <section class="slide">
-        <h2>Стайлз гайде</h2>
+        <h2>Стайлз ниндзюцу</h2>
         <br>
 
         <ul>
@@ -164,6 +205,18 @@
     </section>
 
     <secion class="slide task-slide">
+        <div class="task-wrapper full">
+            <img src="./assets/foodstuff.png" alt="">
+        </div>
+    </secion>
+
+    <secion class="slide task-slide">
+        <div class="task-wrapper full">
+            <img src="./assets/foodstuff-grid.jpg" alt="">
+        </div>
+    </secion>
+
+    <secion class="slide task-slide">
         <div class="task-wrapper">
             <img src="./assets/tripl-progres-bar.jpg" alt="">
         </div>
@@ -181,6 +234,11 @@
         </div>
     </secion>
 
+    <secion class="slide task-slide">
+        <div class="task-wrapper full">
+            <img src="./assets/pseudo.jpg" alt="">
+        </div>
+    </secion>
 
     <section class="slide">
         <h2>Приколясы</h2>
