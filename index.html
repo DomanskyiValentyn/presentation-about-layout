@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/@shower/material/styles/styles.css">
     <style>
+        img {
+            object-fit: cover;
+        }
+
         .shower {
             --slide-ratio: calc(16 / 9);
             --color-key: #844caf;
@@ -16,16 +20,35 @@
             color: white !important;
         }
 
-        .bem-bgi:after {
+        .bem {
+            padding-left: 300px;
+        }
+
+        .bem-bgi img{
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             background-color: black;
-            opacity: 0.5;
             z-index: -1;
-            width: 100%;
+            width: 280px;
             height: 100%;
+        }
+
+        .task-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .task-slide {
+            padding: 0;
+        }
+
+        .task-wrapper.full img {
+            height: 100%;
+            max-height: 100vh;
         }
     </style>
 </head>
@@ -49,41 +72,76 @@
             <li>Инструменты и что можно посмотреть</li>
             <li>Задания и их решение</li>
             <li>Q&A</li>
+            <li>прикол со спинером</li>
+            <li>Изначално правильно настроеная система но она появитсья с опытом</li>
+            <li>:not()</li>
+            <li>
+                {
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                }
+            </li>
         </ul>
     </section>
 
     <section class="slide">
-        <h2>Те самые гриды</h2>
+        <h2 class="shout">Тишина в классе!</h2>
     </section>
 
     <section class="slide">
-        <h2>Семантический BEM</h2>
+        <h2>Версточка ч.1</h2>
+        <br>
 
         <ul>
             <li class="next">Хватит писать блок в блоке с блоком под блоком в блоке варпер!</li>
             <li class="next">Да можно писать стили для HTML и BODY!</li>
             <li class="next">Отдайте на обчисление машине</li>
-            <li class="next">Не усложняйте</li> <!-- не надо делать много блоков для простых задач-->
+            <li class="next">Не усложняйте верстку Вам это адаптировать</li> <!-- не надо делать много блоков для простых задач-->
+            <li class="next">Интересный селктор :not</li>
         </ul>
     </section>
 
     <section class="slide">
-        <h2 class="c-white">Это наш БЭМ и мы его доим</h2>
+        <h2>Версточка ч.2</h2>
+        <br>
 
-        <p class="c-white">.блок--элемент.модификатор</p>
-        <p class="c-white">.главный-блок__блок--элемент.модификатор</p>
-        <p class="c-white">.какой-то-главный-блок__внутри-есть-блок--и-есть-елемент-блока.а-также-модификатор</p>
+        <ul>
+            <li class="next">Очень удобно писать margin/padding <br>{ top: 0; bottom: 0; right: 0; left: 0; }</li>
+            <li class="next">Очень просто верстать когда рисуешь</li>
+            <li class="next">Илюзия обмана</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Те самые гриды</h2>
+        <br>
+
+        <ul>
+            <li class="next">Самый удобный инструмент вверстке который может упрвлять блоками сразу по двум осям (flex использует только одну).</li>
+            <li class="next">Удобный инструмент при размещение и установки размеров блоку.</li>
+            <li class="next">Адекватная альтернатива таблицам!</li>
+            <li class="next">А еще можно flex туда засунуть</li>
+        </ul>
+    </section>
+
+    <section class="slide bem">
+        <h2>Это наш БЭМ и мы его доим</h2>
+
+        <p>Да можно писать ооооооочень длиные классы</p>
+
+        <p>.блок--элемент.модификатор</p>
+        <p>.главный-блок__блок--элемент.модификатор</p>
+        <p>.какой-то-главный-блок__внутри-есть-блок--и-есть-елемент-блока.а-также-модификатор</p>
         <div class="bem-bgi">
-            <img src="./assets/dykalis.jpg" alt="" class="cover" width="100%" height="100%">
+            <img src="./assets/dykalis.jpg">
         </div>
     </section>
 
     <section class="slide">
-        <h2>Таски</h2>
-    </section>
-
-    <section class="slide">
-        <h2>Стайлз</h2>
+        <h2>Стайлз гайде</h2>
+        <br>
 
         <ul>
             <li class="next">Давайте не будем бояться амперсанта</li>
@@ -92,6 +150,37 @@
             <li class="next">Начните управлять своими SVG</li>
         </ul>
     </section>
+
+    <section class="slide">
+        <h2 class="shout">Тасочки</h2>
+
+        <h3>Все примеры были реализованы без JS</h3>
+    </section>
+
+    <section class="slide task-slide">
+        <div class="task-wrapper">
+            <img src="./assets/svg-animation.gif" alt="">
+        </div>
+    </section>
+
+    <secion class="slide task-slide">
+        <div class="task-wrapper">
+            <img src="./assets/tripl-progres-bar.jpg" alt="">
+        </div>
+    </secion>
+
+    <secion class="slide task-slide">
+        <div class="task-wrapper">
+            <img src="./assets/progresbar-ciurcle.jpg" alt="">
+        </div>
+    </secion>
+
+    <secion class="slide task-slide">
+        <div class="task-wrapper full">
+            <img src="./assets/tri.jpg" alt="">
+        </div>
+    </secion>
+
 
     <section class="slide">
         <h2>Приколясы</h2>
