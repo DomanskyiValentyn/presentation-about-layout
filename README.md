@@ -1,2 +1,2 @@
 # presentation-about-layout
-need npm install and after shower serve
+need npm install and after "shower serve"
